@@ -1,10 +1,11 @@
 * {
-    font-family: cursive;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #F9F9F9;
     color: #333;
     margin: 0;
     padding: 0;
-    display: flexbox;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 
@@ -31,12 +32,13 @@
         width: 100%;
     }
 
-    .navbar,ul,li,.a {
-        background-image: url("img/001.png");
+
+    .navbar,ul,.a {
+        background-image: url("img/002.png");
         margin: 0%;
     }
 
-    .list {
+    .lista {
         margin-top: 10px;
         text-decoration: none;
         font-size: 20px;
@@ -57,8 +59,32 @@
     }
 
     .list:active {
-        background-color: rgb(104, 127, 255);
+        background-color: rgb(16, 23, 65);
         color: rgb(0, 110, 255);
+    }
+    .project {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img_1{
+        flex: 40%;
+        margin: 5px;
+    }
+    .img_2{
+        flex: 50%;
+    }
+    .img_3,.wimg,.wimg2{
+        margin: 5px;
+    }
+    .wimg{
+        border-radius: 50%;
+        margin-left: 20%;
+    }
+    .wimg2{
+        border-radius: 50%;
+        margin-left: 20%;
     }
 
     /*---------------------------Nav steyl end & start home---------------*/
@@ -78,14 +104,25 @@
         animation-name: zoom;
         animation-duration: 1s;
     }
-
+    .names{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .name {
+        flex: 50%;
         color: #6889f3;
+        background-color: #00000000;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin-left: 30px;
         animation: moveUpDown-3 2s infinite alternate ease-in-out, glow 1s infinite alternate ease-in-out;
-
     }
+    .image {
+        flex: 30%;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+
 
     .welcome_tag_1 {
         animation-name: zoom;
@@ -130,7 +167,7 @@
         animation-name: zoom;
         animation-duration: 2s;
         font-size: medium;
-        background-color: rgba(100, 148, 237, 0.678);
+        background-color: rgba(100, 148, 237, 0);
         text-align: start;
         border-radius: 10px;
         padding: 10px;
@@ -139,19 +176,13 @@
     .footer_paragraf-2 {
         animation: moveUpDown-2 5s infinite alternate ease-in-out, glow 10s infinite alternate ease-in-out;;
         color: azure;
-        background-color: rgba(34, 0, 73, 0.678);
+        background-color: rgba(34, 0, 73, 0);
         text-align: start;
         border-radius: 10px;
         padding: 10px;
         margin: 5px;
     }
-    .li_0,.e-adres {
-       font-size: 17px;
-       margin: 0px;
-       text-align: start;
-       font-family: Georgia, 'Times New Roman', Times, serif;
-       color: #9fb5ff; 
-    }
+
     .footer_maseg {
 
         color: #000000;
@@ -159,19 +190,59 @@
 
     }
     .maseg {
-        margin-left: 100px;
-        margin-top: 200px;
-        background-color: #333;
+        text-decoration: none;
+        margin-left: 150px;
+        background-color: #af7373;
         padding: 3px 6px 3px 6px;
         border-radius: 3px;
         color: #F9F9F9;
     }
     .maseg:active {
-        background-color: #000000;
+        background-color: #00000093;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
     }
 
+    .footer_01 {
+        font-size: 13px;
+        flex: 50%;
+        background-image: url("img/about.jpg");
 
-
+        background-repeat: no-repeat;
+    }
+    .footer_02 {
+        animation: welcom_1 0.25s infinite alternate ease-in-out;
+        flex: 50%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .li_0,li {
+        margin-left: 39px;
+        background-color: #00000000;
+        font-size: 14px;
+        color: #d6d6d6;
+    }
+    .e_adres{
+        background-color: #00000000;
+        text-decoration: none;
+        color: #b26eff;
+    }
+    .e_adres:active{
+        background-color: #00000000;
+        text-decoration: underline;
+        color: #8a3ce2;
+    }
+    .contac {
+        padding: 20px;
+        text-decoration: none;
+        background-color: #0000008a;
+    }
+    footer {
+        background-color: #6889f3;
+    }
 
     @keyframes zoom {
         from {
@@ -227,6 +298,16 @@
 
         100% {
             background: linear-gradient(4deg, #9fa8ff, #b370ff);
+        }
+    }
+    @keyframes welcom_2 {
+
+        0% {
+            background: linear-gradient(4deg, #a0eef8, #05106d);
+        }
+
+        100% {
+            background: linear-gradient(4deg, #a0eef8, #081481);
         }
     }
 }
