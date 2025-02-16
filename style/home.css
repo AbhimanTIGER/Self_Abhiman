@@ -25,6 +25,7 @@
     /*--------------Nav bar steyl start------------*/
 
     .navbar {
+        position: fixed;
         text-align: center;
         padding-top: 15px;
         padding-bottom: 20px;
