@@ -71,24 +71,15 @@
 
     .img_1{
         flex: 40%;
-        margin: 5px;
+        margin-left: 5px;
     }
     .img_2{
         flex: 50%;
     }
     .img_3,.wimg,.wimg2{
-        margin: 5px;
+        margin-left:3px;
+        margin-top: 3px;
     }
-    .wimg{
-        border-radius: 50%;
-        margin-left: 20%;
-        
-    }
-    .wimg2{
-        border-radius: 50%;
-        margin-left: 20%;
-    }
-
     /*---------------------------Nav steyl end & start home---------------*/
 
     #Home {
@@ -241,6 +232,13 @@
     }
     footer {
         background-color: #7394ff60;
+    }
+    .foot_det {
+        color: #701616;
+        animation: moveUpDown-3 3s infinite alternate ease-in-out, glow 0.50s infinite alternate ease-in-out;
+    }
+    .det {
+        background-color: #240f70;
     }
 
     @keyframes zoom {
