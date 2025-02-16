@@ -174,7 +174,7 @@
         margin: 5px;
     }
     .footer_paragraf-2 {
-        animation: moveUpDown-2 5s infinite alternate ease-in-out, glow 10s infinite alternate ease-in-out;;
+        animation: moveUpDown-2 3s infinite alternate ease-in-out, glow 2s infinite alternate ease-in-out;;
         color: azure;
         background-color: rgba(34, 0, 73, 0);
         text-align: start;
