@@ -188,13 +188,13 @@
     .maseg {
         text-decoration: none;
         margin-left: 170px;
-        animation: welcom_2 0.25s infinite alternate ease-in-out;
+        animation: welcom_1 0.25s infinite alternate ease-in-out;
         padding: 3px 6px 3px 6px;
         border-radius: 3px;
         color: #680d4d;
     }
     .maseg:active {
-        animation: welcom_1 0.25s infinite alternate ease-in-out;
+        animation: welcom_2 0.25s infinite alternate ease-in-out;
         
     }
     .footer{
@@ -235,7 +235,7 @@
     }
     .foot_det {
         color: #701616;
-        animation: moveUpDown-3 3s infinite alternate ease-in-out, glow 0.50s infinite alternate ease-in-out;
+        animation: moveUpDown-3 7s infinite alternate ease-in-out, glow 0.50s infinite alternate ease-in-out;
     }
     .det {
         background-color: #240f70;
